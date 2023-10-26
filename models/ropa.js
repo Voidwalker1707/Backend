@@ -14,6 +14,7 @@ const ropaSchema = new mongoose.Schema({
     precio: {type: Number, required: true},
     color:{type: String, required: true},
     cantidad_en_stock:{type: Number, required: true},
+    imagen: {type: String, required: true}
 
 });
 ropaSchema.set('toJSON', {
