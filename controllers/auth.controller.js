@@ -54,5 +54,5 @@ export const signIn = async (req, res) => {
     }
 
     const token = generateToken(foundUser);
-    res.status(200).json(token);
+    res.status(200).header('Authorization', `Bearer ${token}`).json({ token });
 }
